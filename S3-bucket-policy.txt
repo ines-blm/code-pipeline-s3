@@ -1,0 +1,15 @@
+#this policy is use to give public access to the user. the access is grant to the object in bucket.
+
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1671392938471",
+    "Statement": [
+        {
+            "Sid": "Stmt1671392905624",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::cicd-homework-s3-bucket-dev/*"
+        }
+    ]
+}
